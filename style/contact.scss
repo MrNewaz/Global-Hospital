@@ -176,9 +176,11 @@ section {
     }
     .form0 {
       display: flex;
+      flex-direction: column;
 
       .form1,
-      .form2 {
+      .form2,
+      .form3 {
         display: flex;
         flex-direction: column;
         input {
@@ -189,8 +191,26 @@ section {
           border: none;
           outline: none;
           border-radius: 1.5rem;
-          text-align: start;
-          padding: 1.5rem 5rem;
+          text-align: center;
+          padding: 1.2rem 5rem;
+          font-size: 1.5rem;
+
+          &:focus {
+            outline: none;
+            border-radius: 1.5rem;
+            border: #6408bc 2px solid;
+          }
+        }
+        textarea {
+          background: #e8e8e8;
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: rgb(51, 51, 51);
+          margin: 1rem;
+          border: none;
+          outline: none;
+          border-radius: 1.5rem;
+          text-align: center;
+          padding: 1rem 5rem;
           font-size: 2rem;
 
           &:focus {
@@ -246,9 +266,7 @@ footer {
     width: 90%;
     margin: auto;
     display: flex;
-    align-items: center;
     h5 {
-      font-family: "Pattaya", sans-serif;
       color: white;
       flex: 1 1 40rem;
     }
@@ -282,10 +300,10 @@ footer {
 }
 @keyframes pat {
   from {
-    transform: translateY(80%);
+    transform: translateY(30%);
   }
   to {
-    transform: translateY(-30%);
+    transform: translateY(-10%);
   }
 }
 
@@ -305,7 +323,7 @@ footer {
 
 @media screen and (max-width: 1050px) {
   html {
-    font-size: 62%;
+    font-size: 80%;
   }
 
   body {
@@ -318,9 +336,7 @@ footer {
   }
   section .box {
     border-radius: 5rem;
-
     height: 60vh;
-    font-size: 80%;
     flex: 1 1 40rem;
   }
   section .rocket {

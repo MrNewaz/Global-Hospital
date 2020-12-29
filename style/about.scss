@@ -82,7 +82,7 @@ section {
   align-items: center;
   transition: all 0.5s ease-in-out;
   .rocket {
-    flex: 1 1 40rem;
+    flex: 1 1 80rem;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -99,8 +99,30 @@ section {
     border-bottom-left-radius: 15rem;
     justify-content: space-evenly;
     align-items: center;
-    flex: 2.5 1 40rem;
+    flex: 2.5 1 80rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    .contact {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: start;
+        text-align: center;
+        color: white;
+        background: #ae64f3;
+        border-radius: 1rem;
+
+        width: 20%;
+        padding: 4rem 2rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        h2 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
     i {
       font-size: 6rem;
       color: #6408bc;
@@ -246,9 +268,7 @@ footer {
     width: 90%;
     margin: auto;
     display: flex;
-    align-items: center;
     h5 {
-      font-family: "Pattaya", sans-serif;
       color: white;
       flex: 1 1 40rem;
     }
